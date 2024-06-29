@@ -1,17 +1,27 @@
-# create-svelte
+# PokeDex
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+This is a sample pokedex application with a lot of features built into it.
 
-## Creating a project
+The technologies or frameworks used in creating this:
 
-If you're seeing this, you've probably already done this step. Congrats!
+- SvelteKit
+- pnpm
+- PlayWright
+- Vitest
+- vite
+- ESLint
+- Tauri
+
+## Using the project
+
+Here's how you can use the project.
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
+# clone the project into your machine
+git clone https://github.com/thebharatmishra/pokedex.git
 
-# create a new project in my-app
-npm create svelte@latest my-app
+# install the dependencies
+npm install
 ```
 
 ## Developing
@@ -23,6 +33,14 @@ npm run dev
 
 # or start the server and open the app in a new browser tab
 npm run dev -- --open
+```
+
+## Mobile & Desktop Version
+
+To use mobile and desktop version of this app you can switch to `mob` branch.
+
+```bash
+git checkout mob
 ```
 
 ## Building
