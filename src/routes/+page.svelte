@@ -1,24 +1,14 @@
 <script lang="ts">
-	import pokemon from '../lib/pokemon.json';
+	import pokemon from '$lib/pokemon.json';
+	import { numberToThreePlaces } from '$lib/numberToThree';
 
-	function numberToThreePlaces(numeral: number) {
-		let numb = '';
-		if (Number(numeral) >= 100) {
-			numb = String(numeral);
-		} else if (Number(numeral) >= 10) {
-			numb = '0' + numeral;
-		} else if (Number(numeral) >= 1) {
-			numb = '00' + numeral;
-		}
-		return numb;
-	}
 
 	console.log(numberToThreePlaces(pokemon[69].pokedex_number));
 	console.log(numberToThreePlaces(pokemon[0].pokedex_number));
 	console.log(numberToThreePlaces(pokemon[600].pokedex_number));
 </script>
 
-<h1>Pokedex</h1>
+<h1 class='text-5xl'>Pokedex</h1>
 <p>Search your pokemon:</p>
 <form action="">
 	<input type="text" />

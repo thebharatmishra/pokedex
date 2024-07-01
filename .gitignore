@@ -50,3 +50,11 @@ capacitor-build.log
 # Carthage and Carthage-built binaries
 Carthage
 *.xcframework.zip
+
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+gradle
+android
